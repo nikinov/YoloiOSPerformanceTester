@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC027B0528218D1C0048CC5A /* yolov5s.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DC027B0428218D1C0048CC5A /* yolov5s.mlmodel */; };
 		DCE64B1628184A0000DCC315 /* TennisARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE64B1528184A0000DCC315 /* TennisARApp.swift */; };
 		DCE64B1828184A0000DCC315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE64B1728184A0000DCC315 /* ContentView.swift */; };
 		DCE64B1A28184A0200DCC315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE64B1928184A0200DCC315 /* Assets.xcassets */; };
@@ -18,9 +19,6 @@
 		DCE64B442818850E00DCC315 /* UIImagePixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE64B432818850E00DCC315 /* UIImagePixelBuffer.swift */; };
 		DCE64B482818905E00DCC315 /* OnViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE64B472818905E00DCC315 /* OnViewModifier.swift */; };
 		DCE64B50281A147400DCC315 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE64B4F281A147400DCC315 /* helpers.swift */; };
-		DCE64B60281AE4DF00DCC315 /* yolov5s.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = DCE64B5F281AE4DF00DCC315 /* yolov5s.mlmodelc */; };
-		DCE64B62281AE4F700DCC315 /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE64B61281AE4F700DCC315 /* Detection.swift */; };
-		DCE64B64281AE4FE00DCC315 /* yolov5s.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE64B63281AE4FE00DCC315 /* yolov5s.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC027B0428218D1C0048CC5A /* yolov5s.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov5s.mlmodel; sourceTree = "<group>"; };
 		DCE64B1228184A0000DCC315 /* TennisAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TennisAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE64B1528184A0000DCC315 /* TennisARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisARApp.swift; sourceTree = "<group>"; };
 		DCE64B1728184A0000DCC315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +54,6 @@
 		DCE64B432818850E00DCC315 /* UIImagePixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePixelBuffer.swift; sourceTree = "<group>"; };
 		DCE64B472818905E00DCC315 /* OnViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnViewModifier.swift; sourceTree = "<group>"; };
 		DCE64B4F281A147400DCC315 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
-		DCE64B5F281AE4DF00DCC315 /* yolov5s.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = yolov5s.mlmodelc; sourceTree = "<group>"; };
-		DCE64B61281AE4F700DCC315 /* Detection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
-		DCE64B63281AE4FE00DCC315 /* yolov5s.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yolov5s.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +104,12 @@
 		DCE64B1428184A0000DCC315 /* TennisAR */ = {
 			isa = PBXGroup;
 			children = (
+				DCE64B3F28184C6C00DCC315 /* YOLO.swift */,
+				DCE64B4F281A147400DCC315 /* helpers.swift */,
+				DC027B0428218D1C0048CC5A /* yolov5s.mlmodel */,
 				DCE64B66281AE55400DCC315 /* Dep */,
 				DCE64B1B28184A0200DCC315 /* Preview Content */,
-				DCE64B5F281AE4DF00DCC315 /* yolov5s.mlmodelc */,
 				DCE64B1928184A0200DCC315 /* Assets.xcassets */,
-				DCE64B63281AE4FE00DCC315 /* yolov5s.swift */,
-				DCE64B61281AE4F700DCC315 /* Detection.swift */,
 				DCE64B1528184A0000DCC315 /* TennisARApp.swift */,
 				DCE64B1728184A0000DCC315 /* ContentView.swift */,
 				DCE64B432818850E00DCC315 /* UIImagePixelBuffer.swift */,
@@ -150,8 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				DCE64B472818905E00DCC315 /* OnViewModifier.swift */,
-				DCE64B4F281A147400DCC315 /* helpers.swift */,
-				DCE64B3F28184C6C00DCC315 /* YOLO.swift */,
 			);
 			path = Dep;
 			sourceTree = "<group>";
@@ -261,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE64B1D28184A0200DCC315 /* Preview Assets.xcassets in Resources */,
-				DCE64B60281AE4DF00DCC315 /* yolov5s.mlmodelc in Resources */,
 				DCE64B1A28184A0200DCC315 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,13 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE64B62281AE4F700DCC315 /* Detection.swift in Sources */,
-				DCE64B64281AE4FE00DCC315 /* yolov5s.swift in Sources */,
 				DCE64B50281A147400DCC315 /* helpers.swift in Sources */,
 				DCE64B442818850E00DCC315 /* UIImagePixelBuffer.swift in Sources */,
 				DCE64B1828184A0000DCC315 /* ContentView.swift in Sources */,
 				DCE64B482818905E00DCC315 /* OnViewModifier.swift in Sources */,
 				DCE64B1628184A0000DCC315 /* TennisARApp.swift in Sources */,
+				DC027B0528218D1C0048CC5A /* yolov5s.mlmodel in Sources */,
 				DCE64B4028184C6C00DCC315 /* YOLO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
