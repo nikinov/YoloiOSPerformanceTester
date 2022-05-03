@@ -69,8 +69,8 @@ class YOLO {
     
     
     public func predict(image: CVPixelBuffer) -> Double! {
+    let timeStamp = CACurrentMediaTime()
       if let output = try? model.prediction(input: image) {
-          let timeStamp = CACurrentMediaTime()
           let a = computeBoundingBoxes(layers: [output.var_854, output.var_888, output.var_922, output.var_944])
           let elapsed = CACurrentMediaTime() - timeStamp
           return elapsed
